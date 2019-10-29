@@ -5,6 +5,7 @@ import { pagesRoutingModule } from './pages.routing.module';
 
 // import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
+import { DetailComponent } from './dashboard/detail/detail.component';
 
 
 @NgModule({

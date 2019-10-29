@@ -29,7 +29,7 @@ declarations: [
 ],
 imports: [
     SharedModule,
-    RouterModule.forChild(pagesRoutes)
+    // RouterModule.forChild(pagesRoutes)
 ],
 
 exports:[

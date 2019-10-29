@@ -6,6 +6,7 @@ import { SocialUser } from 'angularx-social-login';
 import { AuthService } from 'angularx-social-login';
 import { FacebookLoginProvider, GoogleLoginProvider } from 'angularx-social-login';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -43,7 +44,7 @@ export class LoginComponent implements OnInit {
       console.log(user);
       this.loggedIn = (user != null);
       if (this.loggedIn) {
-        this.router.navigate(['/']);
+        this.router.navigate(['detail']);
         localStorage.setItem('Usuario', JSON.stringify(this.user));
       }
     });
